@@ -8,6 +8,7 @@
 	"devDependencies": {
 		"@babel/core": "^7.13.10",
 		"@babel/preset-env": "^7.13.10",
+		"@fortawesome/fontawesome-free": "^5.15.2",
 		"babel-loader": "^8.2.2",
 		"babel-plugin-module-resolver": "^4.1.0",
 		"babel-plugin-root-import": "^6.6.0",
@@ -28,6 +29,10 @@
 		"gulp-sass": "^4.1.0",
 		"gulp-sass-glob": "^1.1.0",
 		"gulp-stylus": "^2.7.0",
+		"node-normalize-scss": "^8.1.2",
 		"webpack-stream": "^6.1.2"
+	},
+	"dependencies": {
+		"gulp-font-awesome-icons": "^1.1.0"
 	}
 }

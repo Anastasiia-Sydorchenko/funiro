@@ -1,2 +1,69 @@
-// USER VARIABLES SECTION
+@import '/node_modules/normalize.css/normalize.css'
 
+//FONTS
+@font-face
+   font-family: 'Gilroy'
+   src: url('/fonts/Gilroy/Gilroy-Regular.woff2')
+   font-weight: 400
+   font-style: normal
+
+@font-face
+   font-family: 'Gilroy'
+   src: url('/fonts/Gilroy/Gilroy-Medium.woff2')
+   font-weight: 500
+   font-style: normal
+
+@font-face
+   font-family: 'Gilroy'
+   src: url('/fonts/Gilroy/Gilroy-Semibold.woff2')
+   font-weight: 600
+   font-style: normal
+
+@font-face
+   font-family: 'Gilroy'
+   src: url('/fonts/Gilroy/Gilroy-Bold.woff2')
+   font-weight: 700
+   font-style: normal
+
+body
+   font-family: 'Gilroy', Sans Serif
+
+.center-position
+   margin-left: auto
+   margin-right: auto
+
+// USER VARIABLES SECTION
+$primary-color_black: #3a3a3a
+$primary-color_white: #ffffff
+
+$primary-color_orange: #e89f71
+$primary-color_light-orange: #f6ddcc
+
+$primary-color_grey: #898989
+$primary-color-price_grey: #B0B0B0
+$primary-color_light-grey: #d8d8d8
+
+$color_dark-blue: #262F56
+$color_light-yellow: #f9f1e7
+$color_red: #e97171
+$color_green: #2ec1ac
+
+// BUTTONS
+li 
+   list-style: none
+
+a 
+   text-decoration: none
+   
+.main_btn
+   color: $primary-color_white
+   background-color: $primary-color_orange
+   border: 1px solid $primary-color_orange
+   font-size: 16px
+   font-weight: 600
+
+   &:hover
+      color: $primary-color_orange
+      background-color: $primary-color_white
+      -webkit-transition: all .35s ease
+      transition: all .35s ease

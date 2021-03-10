@@ -1,5 +1,7 @@
 // // Import jQuery module (npm i jquery)
 // import $ from 'jquery'
+import '@fortawesome/fontawesome-free/js/all.js'
+
 // window.jQuery = $
 // window.$ = $
 
@@ -7,7 +9,5 @@
 // require('~/app/libs/mmenu/dist/mmenu.js')
 
 document.addEventListener('DOMContentLoaded', () => {
-
-	// Custom JS
 
 })
