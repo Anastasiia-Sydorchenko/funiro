@@ -1,4 +1,5 @@
 @import '/node_modules/normalize.css/normalize.css'
+@import '/node_modules/swiper/swiper-bundle.min.css'
 
 //FONTS
 @font-face
@@ -25,6 +26,11 @@
    font-weight: 700
    font-style: normal
 
+// MIXINS
+@mixin transition
+   -webkit-transition: all 0.35s ease
+   transition: all 0.35s ease
+
 body
    font-family: 'Gilroy', Sans Serif
 
@@ -48,7 +54,9 @@ $color_light-yellow: #f9f1e7
 $color_red: #e97171
 $color_green: #2ec1ac
 
-// BUTTONS
+button 
+   outline: none
+
 li 
    list-style: none
 

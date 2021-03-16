@@ -6,26 +6,33 @@
 
 //HEADER 
 .intro
-   background-color: $color_light-yellow
-   background-size: 200px 150px
+   background-image: url('/images/dist/intro_bg.svg')
+   background-repeat: no-repeat
+   background-size: 70% 100%
 
    header
       display: flex
       padding: 50px 0 70px 0
+      align-items: center
+      justify-content: space-between
 
       .menu
-         width: 40%
-         ul
-            display: flex
-            justify-content: space-between
+         width: 30%
+         display: flex
+         justify-content: space-between
+   
+         .menu_item
+            &:hover
+               color: $primary-color_orange
+               @include transition
 
-            a 
-               color: $primary-color_black
-               font-size: 16px
-               font-weight: 500
+         a
+            color: $primary-color_black
+            font-size: 16px
+            font-weight: 500
 
       .search
-         width: 30%
+         width: 35%
 
          form
             position: relative
@@ -35,13 +42,13 @@
             button
                outline: none
                background-color: $primary-color_white
-   
+
             input
-               width: 100%
+               width: 90%
                height: 45px
                padding-left: 45px
                border: none
-   
+
             button
                border: none
                height: 45px
@@ -50,12 +57,104 @@
                top: 0
                left: 0
                cursor: pointer
-   
+               padding: 0
+
                &::before
                   font-family: 'Font Awesome\ 5 Free'
                   content: '\f002'
-                  font-weight: bold
+                  font-weight: 700
                   font-size: 16px
                   color: $primary-color_black
+                  cursor: default
+
+      .info
+         display: flex
+         width: 15%
+         justify-content: space-between
+         align-items: center
+
+   .intro_slider
+      .swiper-container
+         width: 100%
+
+         .swiper-wrapper
+            width: 50%
+
+            .swiper-slide
+               text-align: center
+               width: auto
+
+               img
+                  height: 550px
+                  width: auto
 
 
+// DROPDOWN BUTTONS
+.dropdown
+   position: relative
+   display: inline-block
+
+   .dropbtn
+      display: flex
+      background-color: transparent
+      color: $primary-color_black
+      font-size: 16px
+      font-weight: 500
+      border: none
+      cursor: pointer
+
+      &:after
+         font-family: 'Font Awesome\ 5 Free'
+         content: '\f078'
+         font-weight: 700
+         font-size: 16px
+         color: $primary-color_black
+         margin-left: 10px
+      
+      &:hover:after
+         color: $primary-color_orange
+         @include transition
+
+.dropdown-content
+   display: none
+   position: absolute
+   background-color: $primary-color_white
+   min-width: 160px
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+   z-index: 1
+
+   a
+      color: $primary-color_black
+      padding: 12px 16px
+      display: block
+
+      &:hover
+         background-color: $primary-color_light-orange
+         @include transition
+
+.show
+   display: block
+
+//MEDIA QUERIES   
+//@media (min-width: 1800px)
+//
+//@media (min-width: 1399.98px)
+//
+@media (max-width: 1199.98px)
+   .intro
+      header
+         .menu
+            width: 35%
+
+         .search
+            width: 30%
+
+//@media (max-width: 991.98px)
+//
+//@media (max-width: 767.98px)
+//
+//@media (max-width: 575.98px)
+//   
+//@media (max-width: 479.98px)
+//
+//@media (max-width: 374.98px)
