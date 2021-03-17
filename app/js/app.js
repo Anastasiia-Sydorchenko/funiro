@@ -9,7 +9,7 @@ import SwiperCore, { Navigation, Pagination } from 'swiper/core';
 // configure Swiper to use modules
 SwiperCore.use([Navigation, Pagination]);
 
-const swiper = new Swiper('.swiper-container', {
+const swiperIntro = new Swiper('#swiper-container_intro', {
    // Optional parameters
    loop: true,
    slidesPerView: 1.5,
@@ -32,6 +32,27 @@ const swiper = new Swiper('.swiper-container', {
    // And if we need scrollbar
    scrollbar: {
       el: '.swiper-scrollbar',
+   },
+});
+
+const swiperTips = new Swiper('#swiper-container_tips', {
+   // Optional parameters
+   loop: true,
+   slidesPerView: 3,
+   slidesPerGroup: 3,
+   spaceBetween: 30,
+   lazyLoading: true,
+
+   // If we need pagination
+   pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+   },
+
+   // Navigation arrows
+   navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
    },
 });
 

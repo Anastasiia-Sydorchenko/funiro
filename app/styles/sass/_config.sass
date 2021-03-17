@@ -46,7 +46,7 @@ $primary-color_orange: #e89f71
 $primary-color_light-orange: #f6ddcc
 
 $primary-color_grey: #898989
-$primary-color-price_grey: #B0B0B0
+$primary-color-price_grey: #b0b0b0
 $primary-color_light-grey: #d8d8d8
 
 $color_dark-blue: #262F56
@@ -75,3 +75,41 @@ a
       background-color: $primary-color_white
       -webkit-transition: all .35s ease
       transition: all .35s ease
+
+// SWIPER 
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet
+   margin: 0 10px
+
+.swiper-pagination-bullet-active
+   background-color: $primary-color_orange
+
+   &:hover
+      border: 1px solid $primary-color_orange
+      border-radius: 50%
+
+.swiper-btn
+   color: $primary-color_orange
+   border: 1px solid $primary-color_light-orange
+   width: 50px
+   height: 50px
+   border-radius: 50%
+   background-color: $primary-color_light-orange
+
+   &:after
+      font-size: calc(12px + 4 * ((100vw - 320px) / (1440 - 320)))
+
+   &:hover
+      color: $primary-color_white
+      border-color: $primary-color_orange
+      background-color: $primary-color_orange
+      @include transition
+
+.swiper-btn_white
+   background-color: $primary-color_white
+   color: $primary-color_orange
+   border-color: $primary-color_white
+   -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2)
+   -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2)
+   box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2)
+
+   top: 35%
