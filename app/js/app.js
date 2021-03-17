@@ -28,11 +28,6 @@ const swiperIntro = new Swiper('#swiper-container_intro', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
    },
-
-   // And if we need scrollbar
-   scrollbar: {
-      el: '.swiper-scrollbar',
-   },
 });
 
 const swiperTips = new Swiper('#swiper-container_tips', {
