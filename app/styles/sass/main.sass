@@ -75,6 +75,7 @@
 
    .swiper-container_extra
       overflow: hidden
+      position: relative
 
    .intro_slider
       #swiper-container_intro
@@ -82,6 +83,10 @@
          left: 10%
          overflow: visible
          padding: 100px 0
+
+         .swiper-pagination
+            top: 5%
+            right: 10%
 
          .swiper-wrapper
             width: 50%
@@ -94,6 +99,18 @@
                img
                   width: 100%
                   height: auto
+
+   .swiper-btn
+      position: absolute
+      top: 6%
+
+   .swiper-button-next
+      right: 7%
+
+   .swiper-button-prev
+      left: 85%
+
+
 
 .item_info
    display: block
@@ -387,6 +404,7 @@
 //TIPS & TRICKS
 .tips-tricks
    padding: 40px 0 80px 0
+   position: relative
 
    h2
       font-size: calc(25px + 15 * ((100vw - 320px) / (1440 - 320)))
@@ -425,6 +443,14 @@
                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
                @include transition
 
+   .swiper-btn_white
+      top: 45%
+      
+   .left-btn
+      left: 3%
+
+   .right-btn
+      right: 3%
 
 //MEDIA QUERIES   
 //@media (min-width: 1800px)
