@@ -515,7 +515,7 @@
 
 //TIPS & TRICKS
 .tips-tricks
-   padding: 40px 0 80px 0
+   padding: 40px 0
    position: relative
 
    h2
@@ -564,6 +564,78 @@
 
    .right-btn
       right: 1%
+
+//FURNITURE
+.furniture
+   .heading
+      text-align: center
+
+      span
+         font-size: calc(16px + 4 * ((100vw - 320px) / (1440 - 320)))
+         font-weight: 600
+         color: #616161
+
+      h2
+         font-size: calc(25px + 15 * ((100vw - 320px) / (1440 - 320)))
+         font-weight: 700
+         color: $primary-color_black
+         margin: 1% 0 0 0
+
+   .furniture-gallery
+      display: flex
+
+      .img_1
+
+      .img_2
+
+      .img_3
+
+      .img_4
+
+      .img_5
+
+      .img_6
+
+      .img_7
+
+      .img_8
+
+      .img_9
+
+      .img-wrapper
+         width: 96%
+         max-width: 960px
+         margin: 0 auto
+
+         img
+            width: 100%
+            height: auto
+            object-fit: cover
+         
+
+      .inner-top,
+      .inner-bottom
+         display: flex
+
+      .left-block,
+      .right-block
+         display: flex
+         flex-direction: column
+         width: 35%
+
+         .inner-top
+            align-items: flex-end
+         
+         .inner-bottom
+            align-items: flex-start
+
+      .center-block
+         width: 20%
+         margin-top: auto
+         margin-bottom: auto
+      
+
+
 
 //MEDIA QUERIES   
 //@media (min-width: 1800px)
