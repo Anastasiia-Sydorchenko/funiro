@@ -51,6 +51,30 @@ const swiperTips = new Swiper('#swiper-container_tips', {
    },
 });
 
+const swiperInspiration = new Swiper('#swiper_inspiration', {
+   // Optional parameters
+   loop: true,
+   slidesPerView: 2.5,
+   spaceBetween: 30,
+   lazyLoading: true,
+ 
+   // If we need pagination
+   pagination: {
+     el: '.swiper-pagination',
+   },
+ 
+   // Navigation arrows
+   navigation: {
+     nextEl: '.swiper-button-next',
+     prevEl: '.swiper-button-prev',
+   },
+ 
+   // And if we need scrollbar
+   scrollbar: {
+     el: '.swiper-scrollbar',
+   },
+ });
+
 document.addEventListener('DOMContentLoaded', () => {
    var a = document.getElementById('dropdown-button_1');
 
