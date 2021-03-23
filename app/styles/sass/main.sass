@@ -568,7 +568,7 @@
 //FURNITURE
 .furniture
    padding-bottom: 30px
-   
+
    .heading
       text-align: center
 
@@ -610,6 +610,7 @@
 
       .img_5
          width: 96%
+         margin: 0
 
       .img_6
          width: 48%
@@ -647,6 +648,69 @@
          width: 20%
          margin-top: auto
          margin-bottom: auto
+
+//FOOTER 
+footer
+   padding: 30px 0
+   display: flex
+   justify-content: space-between
+   align-items: baseline
+
+   h4
+      font-size: calc(16px + 8 * ((100vw - 320px) / (1440 - 320)))
+      font-weight: 700
+      color: $primary-color_black
+      margin: 0 0 .7em 0
+
+   .about
+      display: flex
+      flex-direction: column
+      width: 20%
+      color: #616161
+      font-size: calc(12px + 4 * ((100vw - 320px) / (1440 - 320)))
+      font-weight: 400
+
+      p
+         margin: 0 0 1em 0
+         line-height: 1.5
+
+      span
+         margin-bottom: 1em
+
+         i
+            margin-right: .5em
+
+   .nav
+      display: flex
+      justify-content: space-between
+      width: 45%
+
+      li
+         margin-bottom: 1em
+
+         a
+            color: #616161
+            font-weight: 500
+
+   .subscribe
+      #email
+         border: 1px solid #f4f5f7
+         background-color: #f4f5f7
+         padding: 1em 2em 1em 1em
+         font-size: calc(12px + 4 * ((100vw - 320px) / (1440 - 320)))
+
+      #button
+         border: 1px solid $primary-color_orange
+         background-color: $primary-color_orange
+         font-size: calc(12px + 4 * ((100vw - 320px) / (1440 - 320)))
+         color: $primary-color_white
+         padding: 1em 1.2em
+         cursor: pointer
+
+         &:hover
+            background-color: $primary-color_white
+            color: $primary-color_orange
+            @include transition
 
 //MEDIA QUERIES   
 //@media (min-width: 1800px)
