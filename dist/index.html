@@ -54,6 +54,29 @@
 
       </div>
 
+      <div class="header__burger">
+   <span></span>
+</div>
+
+<nav class="header__menu">
+   <div class="lists">
+      <ul>
+         <li class="name">Products</li>
+         <li><a href="#">Link 1</a></li>
+         <li><a href="#">Link 2</a></li>
+         <li><a href="#">Link 3</a></li>
+      </ul>
+      <ul>
+         <li class="name">Rooms</li>
+         <li><a href="#">Link 1</a></li>
+         <li><a href="#">Link 2</a></li>
+         <li><a href="#">Link 3</a></li>
+      </ul>
+   </div>
+
+   <a href="#" class="name">Inspirations</a>
+</nav>
+
       <div class="search">
          <form>
             <button type="submit"></button>
@@ -83,7 +106,7 @@
          <div class="shop-now_window">
             <h1>High-Quality Furniture Just For You</h1>
             <p>Our furniture is made from selected and best quality materials that are suitable for your dream home</p>
-            <button class="main_btn">Shop Now</button>
+            <button class="btn main_btn__orange intro_btn">Shop Now</button>
          </div>
 
          <div class="swiper-container_extra">
@@ -138,63 +161,66 @@
 
          </div>
       </div>
+
    </div>
 
    <!-- FEATURES -->
    <div class="features container center-position">
 
-      <div class="item">
-         <div class="img_wrapper">
-            <img src="./images/dist/feature_1.svg" alt="">
+      <div class="column_mobile reverse">
+         <div class="item">
+            <div class="img_wrapper">
+               <img src="./images/dist/feature_1.svg" alt="">
+            </div>
+            <div class="info">
+               <h4>High Quality</h4>
+               <span>crafted from top materials</span>
+            </div>
          </div>
-         <div class="info">
-            <h4>High Quality</h4>
-            <span>crafted from top materials</span>
-         </div>
-      </div>
-
-      <div class="item">
-         <div class="img_wrapper">
-            <img src="./images/dist/feature_2.svg" alt="">
-         </div>
-         <div class="info">
-            <h4>Warrany Protection</h4>
-            <span>Over 2 years</span>
-         </div>
-      </div>
-
-      <div class="item">
-         <div class="img_wrapper">
-            <img src="./images/dist/feature_3.svg" alt="">
-         </div>
-         <div class="info">
-            <h4>Free Shipping</h4>
-            <span>Order over 150 $</span>
+   
+         <div class="item">
+            <div class="img_wrapper">
+               <img src="./images/dist/feature_2.svg" alt="">
+            </div>
+            <div class="info">
+               <h4>Warrany Protection</h4>
+               <span>Over 2 years</span>
+            </div>
          </div>
       </div>
 
-      <div class="item">
-         <div class="img_wrapper">
-            <img src="./images/dist/feature_4.svg" alt="">
+      <div class="column_mobile">
+         <div class="item">
+            <div class="img_wrapper">
+               <img src="./images/dist/feature_3.svg" alt="">
+            </div>
+            <div class="info">
+               <h4>Free Shipping</h4>
+               <span>Order over 150 $</span>
+            </div>
          </div>
-         <div class="info">
-            <h4>24 / 7 Support</h4>
-            <span>Dedicated support</span>
+   
+         <div class="item">
+            <div class="img_wrapper">
+               <img src="./images/dist/feature_4.svg" alt="">
+            </div>
+            <div class="info">
+               <h4>24 / 7 Support</h4>
+               <span>Dedicated support</span>
+            </div>
          </div>
       </div>
-
    </div>
 
    <!-- OUR PRODUCTS -->
    <div class="our-products container center-position">
+      <h2>Our Products</h2>
       <div class="grid-container">
 
          <div class="product-item">
-            <div class="img_wrapper">
-               <img src="./images/dist/product_1.png" alt="">
-            </div>
+            <img src="./images/dist/product_1.png" alt="">
 
-            <div class="info">
+            <div class="our-products__info">
                <h5>Syltherine</h5>
                <span class="description">Stylish cafe chair</span>
                <span class="price">Rp 2.500.000</span>
@@ -203,7 +229,7 @@
 
             <div class="product-item_buttons__block">
                <div class="product-item_buttons">
-                  <button>Add to cart</button><br>
+                  <button class="btn main_btn__white">Add to cart</button><br>
                   <button><i class="fas fa-share-alt"></i>Share</button>
                   <button><i class="far fa-heart"></i>Like</button>
                </div>
@@ -213,11 +239,9 @@
          </div>
 
          <div class="product-item">
-            <div class="img_wrapper">
-               <img src="./images/dist/product_2.png" alt="">
-            </div>
+            <img src="./images/dist/product_2.png" alt="">
 
-            <div class="info">
+            <div class="our-products__info">
                <h5>Leviosa</h5>
                <span class="description">Stylish cafe chair</span>
                <span class="price">Rp 2.500.000</span>
@@ -226,7 +250,7 @@
 
             <div class="product-item_buttons__block">
                <div class="product-item_buttons">
-                  <button>Add to cart</button><br>
+                  <button class="btn main_btn__white">Add to cart</button><br>
                   <button><i class="fas fa-share-alt"></i>Share</button>
                   <button><i class="far fa-heart"></i>Like</button>
                </div>
@@ -234,11 +258,9 @@
          </div>
 
          <div class="product-item">
-            <div class="img_wrapper">
-               <img src="./images/dist/product_3.png" alt="">
-            </div>
+            <img src="./images/dist/product_3.png" alt="">
 
-            <div class="info">
+            <div class="our-products__info">
                <h5>Lolito</h5>
                <span class="description">Luxury big sofa</span>
                <span class="price">Rp 7.000.000</span>
@@ -247,7 +269,7 @@
 
             <div class="product-item_buttons__block">
                <div class="product-item_buttons">
-                  <button>Add to cart</button><br>
+                  <button class="btn main_btn__white">Add to cart</button><br>
                   <button><i class="fas fa-share-alt"></i>Share</button>
                   <button><i class="far fa-heart"></i>Like</button>
                </div>
@@ -258,11 +280,9 @@
          </div>
 
          <div class="product-item">
-            <div class="img_wrapper">
-               <img src="./images/dist/product_4.png" alt="">
-            </div>
+            <img src="./images/dist/product_4.png" alt="">
 
-            <div class="info">
+            <div class="our-products__info">
                <h5>Respira</h5>
                <span class="description">Minimalist fan</span>
                <span class="price">Rp 500.000</span>
@@ -271,7 +291,7 @@
 
             <div class="product-item_buttons__block">
                <div class="product-item_buttons">
-                  <button>Add to cart</button><br>
+                  <button class="btn main_btn__white">Add to cart</button><br>
                   <button><i class="fas fa-share-alt"></i>Share</button>
                   <button><i class="far fa-heart"></i>Like</button>
                </div>
@@ -282,11 +302,9 @@
          </div>
 
          <div class="product-item">
-            <div class="img_wrapper">
-               <img src="./images/dist/product_5.png" alt="">
-            </div>
+            <img src="./images/dist/product_5.png" alt="">
 
-            <div class="info">
+            <div class="our-products__info">
                <h5>Grifo</h5>
                <span class="description">Night lamp</span>
                <span class="price">Rp 1.500.000</span>
@@ -295,7 +313,7 @@
 
             <div class="product-item_buttons__block">
                <div class="product-item_buttons">
-                  <button>Add to cart</button><br>
+                  <button class="btn main_btn__white">Add to cart</button><br>
                   <button><i class="fas fa-share-alt"></i>Share</button>
                   <button><i class="far fa-heart"></i>Like</button>
                </div>
@@ -303,19 +321,18 @@
          </div>
 
          <div class="product-item">
-            <div class="img_wrapper">
-               <img src="./images/dist/product_6.png" alt="">
-            </div>
+            <img src="./images/dist/product_6.png" alt="">
 
-            <div class="info">
+            <div class="our-products__info">
                <h5>Muggo</h5>
                <span class="description">Small mug</span>
                <span class="price">Rp 150.000</span>
                <span class="old-price"></span>
             </div>
+
             <div class="product-item_buttons__block">
                <div class="product-item_buttons">
-                  <button>Add to cart</button><br>
+                  <button class="btn main_btn__white">Add to cart</button><br>
                   <button><i class="fas fa-share-alt"></i>Share</button>
                   <button><i class="far fa-heart"></i>Like</button>
                </div>
@@ -326,11 +343,9 @@
          </div>
 
          <div class="product-item">
-            <div class="img_wrapper">
-               <img src="./images/dist/product_7.png" alt="">
-            </div>
+            <img src="./images/dist/product_7.png" alt="">
 
-            <div class="info">
+            <div class="our-products__info">
                <h5>Pingky</h5>
                <span class="description">Cute bed set</span>
                <span class="price">Rp 7.000.000</span>
@@ -339,7 +354,7 @@
 
             <div class="product-item_buttons__block">
                <div class="product-item_buttons">
-                  <button>Add to cart</button> <br>
+                  <button class="btn main_btn__white">Add to cart</button> <br>
                   <button><i class="fas fa-share-alt"></i>Share</button>
                   <button><i class="far fa-heart"></i>Like</button>
                </div>
@@ -350,11 +365,9 @@
          </div>
 
          <div class="product-item">
-            <div class="img_wrapper">
-               <img src="./images/dist/product_8.png" alt="">
-            </div>
+            <img src="./images/dist/product_8.png" alt="">
 
-            <div class="info">
+            <div class="our-products__info">
                <h5>Potty</h5>
                <span class="description">Minimalist flower pot</span>
                <span class="price">Rp 500.000</span>
@@ -363,7 +376,7 @@
 
             <div class="product-item_buttons__block">
                <div class="product-item_buttons">
-                  <button>Add to cart</button> <br>
+                  <button class="btn main_btn__white">Add to cart</button> <br>
                   <button><i class="fas fa-share-alt"></i>Share</button>
                   <button><i class="far fa-heart"></i>Like</button>
                </div>
@@ -375,7 +388,197 @@
 
       </div>
 
-      <button class="products_btn center-position">Show more</button>
+      <div class="slider__mobile container center-position">
+
+         <!-- Slider main container -->
+         <div class="swiper-container" id="our-products__slider_mobile">
+            
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+
+               <div class="swiper-slide">
+                  <img src="./images/dist/product_1.png" alt="">
+
+                  <div class="about-product">
+                     <div class="our-products__info">
+                        <h5>Syltherine</h5>
+                        <span class="description">Stylish cafe chair</span>
+                        <span class="price">Rp 2.500.000</span>
+                        <span class="old-price">Rp 3.500.000</span>
+                     </div>
+      
+                     <div class="product-item_buttons">
+                        <button>Add to cart</button><br>
+                        <button><i class="fas fa-share-alt"></i>Share</button>
+                        <button><i class="far fa-heart"></i>Like</button>
+                     </div>
+                  </div>
+   
+                  <div class="discount">-30% </div>
+               </div>
+   
+               <div class="swiper-slide">
+                  <img src="./images/dist/product_2.png" alt="">
+
+                  <div class="about-product">
+                     <div class="our-products__info">
+                        <h5>Leviosa</h5>
+                        <span class="description">Stylish cafe chair</span>
+                        <span class="price">Rp 2.500.000</span>
+                        <span class="old-price"></span>
+                        </div>
+         
+                        <div class="product-item_buttons">
+                           <button>Add to cart</button><br>
+                           <button><i class="fas fa-share-alt"></i>Share</button>
+                           <button><i class="far fa-heart"></i>Like</button>
+                        </div>
+                  </div>
+               </div>
+   
+               <div class="swiper-slide">
+                  <img src="./images/dist/product_3.png" alt="">
+
+                  <div class="about-product">
+                  <div class="our-products__info">
+                     <h5>Lolito</h5>
+                     <span class="description">Luxury big sofa</span>
+                     <span class="price">Rp 7.000.000</span>
+                     <span class="old-price">Rp 14.000.000</span>
+                  </div>
+      
+                  <div class="product-item_buttons">
+                     <button>Add to cart</button><br>
+                     <button><i class="fas fa-share-alt"></i>Share</button>
+                     <button><i class="far fa-heart"></i>Like</button>
+                  </div>
+                  </div>
+
+                  <div class="discount">-50% </div>
+   
+               </div>
+   
+               <div class="swiper-slide">
+                  <img src="./images/dist/product_4.png" alt="">
+   
+                  <div class="about-product">
+                     <div class="our-products__info">
+                        <h5>Respira</h5>
+                        <span class="description">Minimalist fan</span>
+                        <span class="price">Rp 500.000</span>
+                        <span class="old-price"></span>
+                     </div>
+
+                     <div class="product-item_buttons">
+                        <button>Add to cart</button><br>
+                        <button><i class="fas fa-share-alt"></i>Share</button>
+                        <button><i class="far fa-heart"></i>Like</button>
+                     </div>
+                  </div>
+   
+                  <div class="new">New</div>
+   
+               </div>
+   
+               <div class="swiper-slide">
+                  <img src="./images/dist/product_5.png" alt="">
+
+                  <div class="about-product">
+                     <div class="our-products__info">
+                        <h5>Grifo</h5>
+                        <span class="description">Night lamp</span>
+                        <span class="price">Rp 1.500.000</span>
+                        <span class="old-price"></span>
+                     </div>
+      
+                     <div class="product-item_buttons">
+                        <button>Add to cart</button><br>
+                        <button><i class="fas fa-share-alt"></i>Share</button>
+                        <button><i class="far fa-heart"></i>Like</button>
+                     </div>
+                  </div>
+
+               </div>
+   
+               <div class="swiper-slide">
+                  <img src="./images/dist/product_6.png" alt="">
+
+                  <div class="about-product">
+                     <div class="our-products__info">
+                        <h5>Muggo</h5>
+                        <span class="description">Small mug</span>
+                        <span class="price">Rp 150.000</span>
+                        <span class="old-price"></span>
+                     </div>
+   
+                     <div class="product-item_buttons">
+                        <button>Add to cart</button><br>
+                        <button><i class="fas fa-share-alt"></i>Share</button>
+                        <button><i class="far fa-heart"></i>Like</button>
+                     </div>
+                  </div>
+   
+               <div class="new">New</div>
+   
+               </div>
+   
+               <div class="swiper-slide">
+                  <img src="./images/dist/product_7.png" alt="">
+
+                  <div class="about-product">
+                     <div class="our-products__info">
+                        <h5>Pingky</h5>
+                        <span class="description">Cute bed set</span>
+                        <span class="price">Rp 7.000.000</span>
+                        <span class="old-price">Rp 14.000.000</span>
+                     </div>
+      
+                     <div class="product-item_buttons">
+                        <button>Add to cart</button> <br>
+                        <button><i class="fas fa-share-alt"></i>Share</button>
+                        <button><i class="far fa-heart"></i>Like</button>
+                     </div>
+                  </div>
+   
+                  <div class="discount">-50% </div>
+   
+               </div>
+   
+               <div class="swiper-slide">
+                  <img src="./images/dist/product_8.png" alt="">
+
+                  <div class="about-product">
+                     <div class="our-products__info">
+                        <h5>Potty</h5>
+                        <span class="description">Minimalist flower pot</span>
+                        <span class="price">Rp 500.000</span>
+                        <span class="old-price"></span>
+                        </div>
+         
+                        <div class="product-item_buttons">
+                           <button>Add to cart</button> <br>
+                           <button><i class="fas fa-share-alt"></i>Share</button>
+                           <button><i class="far fa-heart"></i>Like</button>
+                        </div>
+                  </div>
+   
+                  <div class="new">New</div>
+   
+               </div>
+              
+            </div>
+
+ 
+         <!-- If we need navigation buttons -->
+         <div class="swiper-button-prev swiper-btn swiper-btn_white"></div>
+         <div class="swiper-button-next swiper-btn swiper-btn_white"></div>
+ 
+      </div>
+         
+      </div>
+
+      <button class="btn main_btn__white center-position">Show more</button>
    </div>
 
    <!-- INSPIRATION -->
@@ -384,7 +587,7 @@
          <h2>50+ Beautiful rooms
             inspiration</h2>
          <p>Our designer already made a lot of beautiful prototipe of rooms that inspire you</p>
-         <button class="main_btn">Explore More</button>
+         <button class="btn main_btn__orange">Explore More</button>
       </div>
 
       <div class="slider-container_extra">
@@ -655,19 +858,19 @@
 
          <div class="right-block">
             <div class="inner-top">
-               <div class="img_wrapper img_6">
+               <div class="img-wrapper img_6">
                   <img src="./images/dist/furniture_6.png" alt="">
                </div>
-               <div class="img_wrapper img_7">
+               <div class="img-wrapper img_7">
                   <img src="./images/dist/furniture_7.png" alt="">
                </div>
             </div>
 
             <div class="inner-bottom">
-               <div class="img_wrapper img_8">
+               <div class="img-wrapper img_8">
                   <img src="./images/dist/furniture_8.png" alt="">
                </div>
-               <div class="img_wrapper img_9">
+               <div class="img-wrapper img_9">
                   <img src="./images/dist/furniture_9.png" alt="">
                </div>
             </div>
@@ -723,6 +926,38 @@
       </div>
    </div>
 
+   <div class="nav__mobile">
+      <div class="dropdown">
+         <button id="dropdown-button_3" class="dropbtn menu_item">Menu</button>
+         <div id="myDropdown_3" class="dropdown-content">
+            <a href="#">Products</a>
+            <a href="#">Rooms</a>
+            <a href="#">Inpirations</a>
+            <a href="#">About Us</a>
+            <a href="#">Terms & Policy</a>
+         </div>
+      </div>
+
+      <div class="dropdown">
+         <button id="dropdown-button_4" class="dropbtn">Account</button>
+         <div id="myDropdown_4" class="dropdown-content">
+            <a href="#">My Account</a>
+            <a href="#">Checkout</a>
+            <a href="#">My Cart</a>
+            <a href="#">My Catalog</a>
+         </div>
+      </div>
+
+      <div class="dropdown">
+         <button id="dropdown-button_5" class="dropbtn">Stay Connected</button>
+         <div id="myDropdown_5" class="dropdown-content">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+         </div>
+      </div>
+   </div>
+
    <div class="subscribe">
       <h4>Stay Updated</h4>
       <form action="#">
@@ -732,18 +967,9 @@
    </div>
 </footer>
 
-
-
-
-
-
-
-
-
-
-
-
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+   integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+   crossorigin="anonymous"></script>
 
 <script src="js/app.min.js"></script>
 

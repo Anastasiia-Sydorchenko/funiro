@@ -1,5 +1,5 @@
-// // Import jQuery module (npm i jquery)
-// import $ from 'jquery'
+// Import jQuery module (npm i jquery)
+import $ from 'jquery'
 // import Swiper JS
 import Swiper from 'swiper';
 
@@ -33,9 +33,16 @@ const swiperIntro = new Swiper('#swiper-container_intro', {
 const swiperInspiration = new Swiper('#swiper_inspiration', {
    // Optional parameters
    loop: true,
-   slidesPerView: 2.5,
+   slidesPerView: 1.5,
    spaceBetween: 30,
    lazyLoading: true,
+
+   // Responsive breakpoints
+   breakpoints: {
+      575: {
+        slidesPerView: 2.5
+      }
+   },
  
    // If we need pagination
    pagination: {
@@ -58,10 +65,22 @@ const swiperInspiration = new Swiper('#swiper_inspiration', {
 const swiperTips = new Swiper('#swiper-container_tips', {
    // Optional parameters
    loop: true,
-   slidesPerView: 3,
-   slidesPerGroup: 3,
+   slidesPerView: 1,
    spaceBetween: 30,
    lazyLoading: true,
+
+   // Responsive breakpoints
+   breakpoints: {
+      575: {
+        slidesPerView: 2,
+        slidesPerGroup: 2
+      },
+
+      991: {
+         slidesPerView: 3,
+         slidesPerGroup: 3
+      }
+   },
 
    // If we need pagination
    pagination: {
@@ -76,21 +95,57 @@ const swiperTips = new Swiper('#swiper-container_tips', {
    },
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-   var a = document.getElementById('dropdown-button_1');
+const swiperOurProducts = new Swiper('#our-products__slider_mobile', {
+   // Optional parameters
+   loop: true,
+   slidesPerView: 1,
+   lazyLoading: true,
+  
+   // Navigation arrows
+   navigation: {
+     nextEl: '.swiper-button-next',
+     prevEl: '.swiper-button-prev',
+   },
+ 
+});
 
-   a.onclick = function () {
+document.addEventListener('DOMContentLoaded', () => {
+   const dropbtnHeader1 = document.getElementById('dropdown-button_1');
+
+   dropbtnHeader1.onclick = function () {
       document.getElementById("myDropdown_1").classList.toggle("show");
       return false;
    }
 
-   var a = document.getElementById('dropdown-button_2');
+   const dropbtnHeader2 = document.getElementById('dropdown-button_2');
 
-   a.onclick = function () {
+   dropbtnHeader2.onclick = function () {
       document.getElementById("myDropdown_2").classList.toggle("show");
       return false;
    }
+
+   const dropbtnFooter1 = document.getElementById('dropdown-button_3');
+
+   dropbtnFooter1.onclick = function () {
+      document.getElementById("myDropdown_3").classList.toggle("show");
+      return false;
+   }
+
+   const dropbtnFooter2 = document.getElementById('dropdown-button_4');
+
+   dropbtnFooter2.onclick = function () {
+      document.getElementById("myDropdown_4").classList.toggle("show");
+      return false;
+   }
+
+   const dropbtnFooter3 = document.getElementById('dropdown-button_5');
+
+   dropbtnFooter3.onclick = function () {
+      document.getElementById("myDropdown_5").classList.toggle("show");
+      return false;
+   }
 })
+
 
 window.onclick = function (event) {
    if (!event.target.matches('.dropbtn')) {
@@ -105,30 +160,4 @@ window.onclick = function (event) {
       }
    }
 }
-
-// https://coderoad.ru/11978995/%D0%9A%D0%B0%D0%BA-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B8%D1%82%D1%8C-%D1%86%D0%B2%D0%B5%D1%82-%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-SVG-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-CSS-%D0%B7%D0%B0%D0%BC%D0%B5%D0%BD%D0%B0-%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-jQuery-SVG
-
-// $(document).ready(function() {
-//    $('img[src$=".svg"]').each(function() {
-//        var $img = jQuery(this);
-//        var imgURL = $img.attr('src');
-//        var attributes = $img.prop("attributes");
-
-//        $.get(imgURL, function(data) {
-//            // Get the SVG tag, ignore the rest
-//            var $svg = jQuery(data).find('svg');
-
-//            // Remove any invalid XML tags
-//            $svg = $svg.removeAttr('xmlns:a');
-
-//            // Loop through IMG attributes and apply on SVG
-//            $.each(attributes, function() {
-//                $svg.attr(this.name, this.value);
-//            });
-
-//            // Replace IMG with SVG
-//            $img.replaceWith($svg);
-//        }, 'xml');
-//    });
-// });
 
